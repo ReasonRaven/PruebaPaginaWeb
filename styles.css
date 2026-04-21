@@ -228,6 +228,7 @@ body {
 /* ── Papas & Refrescos ─────────────────────────────────── */
 .papas-section { background: var(--dark); }
 .refrescos-section { background: var(--dark2); }
+.agua-section { background: var(--dark); }
 
 /* ── Nosotros ──────────────────────────────────────────── */
 .nosotros {
