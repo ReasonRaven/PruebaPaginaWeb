@@ -14,6 +14,7 @@
     <ul class="nav-links">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#menu">Menú</a></li>
+      <li><a href="#refrescos">Refrescos</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
@@ -142,6 +143,66 @@
     </div>
   </section>
 
+  <!-- REFRESCOS -->
+  <section class="menu refrescos-section" id="refrescos">
+    <div class="section-header">
+      <h2>Refrescos</h2>
+      <p>La bebida perfecta para acompañar tu pizza</p>
+    </div>
+    <div class="menu-grid">
+
+      <div class="card">
+        <div class="card-img">🥤</div>
+        <div class="card-body">
+          <h3>Coca-Cola</h3>
+          <p>Refresco clásico de cola, bien frío. 600 ml.</p>
+          <div class="card-footer">
+            <span class="price">$30</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Coca-Cola', 30)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍋</div>
+        <div class="card-body">
+          <h3>Limonada</h3>
+          <p>Limonada natural con hierbabuena, preparada al momento.</p>
+          <div class="card-footer">
+            <span class="price">$35</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Limonada', 35)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card popular">
+        <div class="badge-popular">Favorita</div>
+        <div class="card-img">🧃</div>
+        <div class="card-body">
+          <h3>Agua de Jamaica</h3>
+          <p>Agua fresca de jamaica natural, sin conservadores.</p>
+          <div class="card-footer">
+            <span class="price">$30</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Agua de Jamaica', 30)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">💧</div>
+        <div class="card-body">
+          <h3>Agua Mineral</h3>
+          <p>Agua mineral con o sin gas. 500 ml.</p>
+          <div class="card-footer">
+            <span class="price">$25</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Agua Mineral', 25)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- CARRITO -->
   <div class="carrito-flotante" id="carrito">
     <div class="carrito-header">
@@ -203,6 +264,7 @@
     <div class="footer-links">
       <a href="#inicio">Inicio</a>
       <a href="#menu">Menú</a>
+      <a href="#refrescos">Refrescos</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
     </div>
