@@ -225,7 +225,8 @@ body {
   font-weight: 700; margin-bottom: 1rem; font-size: 1.05rem;
 }
 
-/* ── Refrescos ─────────────────────────────────────────── */
+/* ── Papas & Refrescos ─────────────────────────────────── */
+.papas-section { background: var(--dark); }
 .refrescos-section { background: var(--dark2); }
 
 /* ── Nosotros ──────────────────────────────────────────── */
