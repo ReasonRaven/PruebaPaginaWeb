@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BurgerHouse — Las Mejores Hamburguesas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">🍔 BurgerHouse</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#menu" class="btn-nav">Ordenar ahora</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="hero-badge">Abierto todos los días</span>
+      <h1>La hamburguesa<br /><span>perfecta</span> te espera</h1>
+      <p>Ingredientes frescos, recetas únicas y el sabor que siempre quisiste. Hecho a la orden, entregado con amor.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">Ver menú</a>
+        <a href="#contacto" class="btn btn-outline">Contactarnos</a>
+      </div>
+    </div>
+    <div class="hero-img">🍔</div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section class="features">
+    <div class="feature">
+      <span>🥩</span>
+      <h3>100% Carne de res</h3>
+      <p>Usamos solo carne fresca de la mejor calidad, sin conservadores.</p>
+    </div>
+    <div class="feature">
+      <span>🚴</span>
+      <h3>Entrega en 30 min</h3>
+      <p>Tu pedido llega caliente y a tiempo, garantizado.</p>
+    </div>
+    <div class="feature">
+      <span>🌿</span>
+      <h3>Ingredientes frescos</h3>
+      <p>Verduras del día, salsas caseras y panes recién horneados.</p>
+    </div>
+    <div class="feature">
+      <span>⭐</span>
+      <h3>+5000 clientes felices</h3>
+      <p>Calificación promedio de 4.9 estrellas en todas las plataformas.</p>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section class="menu" id="menu">
+    <div class="section-header">
+      <h2>Nuestro Menú</h2>
+      <p>Elige tu favorita — todas vienen con papas fritas y refresco</p>
+    </div>
+    <div class="menu-grid">
+
+      <div class="card">
+        <div class="card-img">🍔</div>
+        <div class="card-body">
+          <h3>Clásica</h3>
+          <p>Carne de res, lechuga, tomate, cebolla, pepinillo y mostaza.</p>
+          <div class="card-footer">
+            <span class="price">$89</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Clásica', 89)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card popular">
+        <div class="badge-popular">Más vendida</div>
+        <div class="card-img">🧀</div>
+        <div class="card-body">
+          <h3>Doble Queso</h3>
+          <p>Doble carne, doble queso cheddar, cebolla caramelizada y salsa especial.</p>
+          <div class="card-footer">
+            <span class="price">$119</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Doble Queso', 119)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌶️</div>
+        <div class="card-body">
+          <h3>Picante BBQ</h3>
+          <p>Carne de res, jalapeños, salsa BBQ ahumada, queso pepper jack.</p>
+          <div class="card-footer">
+            <span class="price">$109</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Picante BBQ', 109)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥑</div>
+        <div class="card-body">
+          <h3>Aguacate</h3>
+          <p>Carne de res, guacamole fresco, queso manchego y pico de gallo.</p>
+          <div class="card-footer">
+            <span class="price">$125</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Aguacate', 125)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍄</div>
+        <div class="card-body">
+          <h3>Hongos & Suizo</h3>
+          <p>Carne de res, hongos salteados, queso suizo derretido y mayonesa de ajo.</p>
+          <div class="card-footer">
+            <span class="price">$115</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Hongos & Suizo', 115)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥗</div>
+        <div class="card-body">
+          <h3>Veggie</h3>
+          <p>Burger de garbanzo, espinaca, tomate deshidratado, hummus y queso feta.</p>
+          <div class="card-footer">
+            <span class="price">$99</span>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Veggie', 99)">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CARRITO -->
+  <div class="carrito-flotante" id="carrito">
+    <div class="carrito-header">
+      <span>🛒 Tu pedido</span>
+      <button onclick="toggleCarrito()" class="carrito-toggle">▲</button>
+    </div>
+    <div class="carrito-body" id="carrito-body">
+      <ul id="carrito-lista"></ul>
+      <div class="carrito-total">
+        <span>Total:</span>
+        <span id="carrito-total">$0</span>
+      </div>
+      <button class="btn btn-primary btn-full" onclick="confirmarPedido()">Confirmar pedido</button>
+    </div>
+  </div>
+
+  <!-- NOSOTROS -->
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros-text">
+      <h2>Nuestra historia</h2>
+      <p>BurgerHouse nació en 2018 con una sola misión: crear la hamburguesa perfecta. Empezamos con un pequeño local familiar y hoy servimos más de 500 pedidos diarios.</p>
+      <p>Cada receta fue desarrollada durante meses de pruebas para lograr el balance exacto de sabores. No usamos congelados ni conservadores — todo se prepara al momento.</p>
+      <a href="#menu" class="btn btn-primary">Prueba nuestra carta</a>
+    </div>
+    <div class="nosotros-stats">
+      <div class="stat"><span>6+</span><p>Años de experiencia</p></div>
+      <div class="stat"><span>500+</span><p>Pedidos diarios</p></div>
+      <div class="stat"><span>18</span><p>Recetas exclusivas</p></div>
+      <div class="stat"><span>4.9⭐</span><p>Calificación promedio</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="section-header">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes alguna pregunta o quieres hacer un pedido especial?</p>
+    </div>
+    <form class="form-contacto" onsubmit="enviarFormulario(event)">
+      <div class="form-row">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="tel" placeholder="Teléfono" required />
+      </div>
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea rows="4" placeholder="Tu mensaje o pedido especial..." required></textarea>
+      <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+    </form>
+    <div class="info-contacto">
+      <p>📍 Av. Principal 123, Col. Centro</p>
+      <p>📞 (55) 1234-5678</p>
+      <p>🕐 Lun–Dom: 11:00 am – 11:00 pm</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">🍔 BurgerHouse</div>
+    <p>© 2026 BurgerHouse. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
