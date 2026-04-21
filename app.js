@@ -8,7 +8,7 @@ function agregarAlCarrito(nombre, precio) {
     carrito.push({ nombre, precio, cantidad: 1 });
   }
   renderCarrito();
-  mostrarToast(`¡${nombre} agregada al carrito! 🍔`);
+  mostrarToast(`¡${nombre} agregada al carrito! 🍕`);
   abrirCarrito();
 }
 
