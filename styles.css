@@ -225,6 +225,9 @@ body {
   font-weight: 700; margin-bottom: 1rem; font-size: 1.05rem;
 }
 
+/* ── Refrescos ─────────────────────────────────────────── */
+.refrescos-section { background: var(--dark2); }
+
 /* ── Nosotros ──────────────────────────────────────────── */
 .nosotros {
   display: grid; grid-template-columns: 1fr 1fr;
