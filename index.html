@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BurgerHouse — Las Mejores Hamburguesas</title>
+  <title>PizzaHouse — Las Mejores Pizzas</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="nav-brand">🍔 BurgerHouse</div>
+    <div class="nav-brand">🍕 PizzaHouse</div>
     <ul class="nav-links">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#menu">Menú</a></li>
@@ -24,32 +24,32 @@
   <section class="hero" id="inicio">
     <div class="hero-content">
       <span class="hero-badge">Abierto todos los días</span>
-      <h1>La hamburguesa<br /><span>perfecta</span> te espera</h1>
-      <p>Ingredientes frescos, recetas únicas y el sabor que siempre quisiste. Hecho a la orden, entregado con amor.</p>
+      <h1>La pizza<br /><span>perfecta</span> te espera</h1>
+      <p>Masa artesanal, ingredientes frescos y el sabor que siempre quisiste. Hecha a la orden, entregada con amor.</p>
       <div class="hero-btns">
         <a href="#menu" class="btn btn-primary">Ver menú</a>
         <a href="#contacto" class="btn btn-outline">Contactarnos</a>
       </div>
     </div>
-    <div class="hero-img">🍔</div>
+    <div class="hero-img">🍕</div>
   </section>
 
   <!-- CARACTERÍSTICAS -->
   <section class="features">
     <div class="feature">
-      <span>🥩</span>
-      <h3>100% Carne de res</h3>
-      <p>Usamos solo carne fresca de la mejor calidad, sin conservadores.</p>
+      <span>🫓</span>
+      <h3>Masa artesanal</h3>
+      <p>Masa fermentada 24 horas, crujiente por fuera y suave por dentro.</p>
     </div>
     <div class="feature">
       <span>🚴</span>
       <h3>Entrega en 30 min</h3>
-      <p>Tu pedido llega caliente y a tiempo, garantizado.</p>
+      <p>Tu pizza llega caliente y a tiempo, garantizado.</p>
     </div>
     <div class="feature">
       <span>🌿</span>
       <h3>Ingredientes frescos</h3>
-      <p>Verduras del día, salsas caseras y panes recién horneados.</p>
+      <p>Verduras del día, salsas caseras y queso recién rallado.</p>
     </div>
     <div class="feature">
       <span>⭐</span>
@@ -62,18 +62,18 @@
   <section class="menu" id="menu">
     <div class="section-header">
       <h2>Nuestro Menú</h2>
-      <p>Elige tu favorita — todas vienen con papas fritas y refresco</p>
+      <p>Elige tu favorita — todas vienen en tamaño mediano o grande</p>
     </div>
     <div class="menu-grid">
 
       <div class="card">
-        <div class="card-img">🍔</div>
+        <div class="card-img">🍕</div>
         <div class="card-body">
-          <h3>Clásica</h3>
-          <p>Carne de res, lechuga, tomate, cebolla, pepinillo y mostaza.</p>
+          <h3>Margherita</h3>
+          <p>Salsa de tomate, mozzarella fresca y albahaca. La clásica italiana.</p>
           <div class="card-footer">
             <span class="price">$89</span>
-            <button class="btn btn-primary" onclick="agregarAlCarrito('Clásica', 89)">Agregar</button>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Margherita', 89)">Agregar</button>
           </div>
         </div>
       </div>
@@ -82,11 +82,11 @@
         <div class="badge-popular">Más vendida</div>
         <div class="card-img">🧀</div>
         <div class="card-body">
-          <h3>Doble Queso</h3>
-          <p>Doble carne, doble queso cheddar, cebolla caramelizada y salsa especial.</p>
+          <h3>Cuatro Quesos</h3>
+          <p>Mozzarella, gouda, parmesano y queso azul sobre base de crema.</p>
           <div class="card-footer">
             <span class="price">$119</span>
-            <button class="btn btn-primary" onclick="agregarAlCarrito('Doble Queso', 119)">Agregar</button>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Cuatro Quesos', 119)">Agregar</button>
           </div>
         </div>
       </div>
@@ -94,23 +94,23 @@
       <div class="card">
         <div class="card-img">🌶️</div>
         <div class="card-body">
-          <h3>Picante BBQ</h3>
-          <p>Carne de res, jalapeños, salsa BBQ ahumada, queso pepper jack.</p>
+          <h3>Diavola</h3>
+          <p>Salami picante, jalapeños, mozzarella y salsa de tomate ahumada.</p>
           <div class="card-footer">
             <span class="price">$109</span>
-            <button class="btn btn-primary" onclick="agregarAlCarrito('Picante BBQ', 109)">Agregar</button>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Diavola', 109)">Agregar</button>
           </div>
         </div>
       </div>
 
       <div class="card">
-        <div class="card-img">🥑</div>
+        <div class="card-img">🥩</div>
         <div class="card-body">
-          <h3>Aguacate</h3>
-          <p>Carne de res, guacamole fresco, queso manchego y pico de gallo.</p>
+          <h3>Carne BBQ</h3>
+          <p>Res desmechada, tocino, cebolla morada y salsa BBQ ahumada.</p>
           <div class="card-footer">
             <span class="price">$125</span>
-            <button class="btn btn-primary" onclick="agregarAlCarrito('Aguacate', 125)">Agregar</button>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Carne BBQ', 125)">Agregar</button>
           </div>
         </div>
       </div>
@@ -118,11 +118,11 @@
       <div class="card">
         <div class="card-img">🍄</div>
         <div class="card-body">
-          <h3>Hongos & Suizo</h3>
-          <p>Carne de res, hongos salteados, queso suizo derretido y mayonesa de ajo.</p>
+          <h3>Funghi</h3>
+          <p>Hongos mixtos salteados, mozzarella, ajo y aceite de oliva extra virgen.</p>
           <div class="card-footer">
             <span class="price">$115</span>
-            <button class="btn btn-primary" onclick="agregarAlCarrito('Hongos & Suizo', 115)">Agregar</button>
+            <button class="btn btn-primary" onclick="agregarAlCarrito('Funghi', 115)">Agregar</button>
           </div>
         </div>
       </div>
@@ -131,7 +131,7 @@
         <div class="card-img">🥗</div>
         <div class="card-body">
           <h3>Veggie</h3>
-          <p>Burger de garbanzo, espinaca, tomate deshidratado, hummus y queso feta.</p>
+          <p>Pimientos, espinaca, aceitunas, champiñones y queso feta sobre base de pesto.</p>
           <div class="card-footer">
             <span class="price">$99</span>
             <button class="btn btn-primary" onclick="agregarAlCarrito('Veggie', 99)">Agregar</button>
@@ -162,13 +162,13 @@
   <section class="nosotros" id="nosotros">
     <div class="nosotros-text">
       <h2>Nuestra historia</h2>
-      <p>BurgerHouse nació en 2018 con una sola misión: crear la hamburguesa perfecta. Empezamos con un pequeño local familiar y hoy servimos más de 500 pedidos diarios.</p>
-      <p>Cada receta fue desarrollada durante meses de pruebas para lograr el balance exacto de sabores. No usamos congelados ni conservadores — todo se prepara al momento.</p>
+      <p>PizzaHouse nació en 2018 con una sola misión: crear la pizza perfecta. Empezamos con un horno de leña familiar y hoy servimos más de 500 pizzas diarias.</p>
+      <p>Cada receta fue desarrollada durante meses de pruebas para lograr el balance exacto de sabores. No usamos ingredientes congelados — todo se prepara al momento.</p>
       <a href="#menu" class="btn btn-primary">Prueba nuestra carta</a>
     </div>
     <div class="nosotros-stats">
       <div class="stat"><span>6+</span><p>Años de experiencia</p></div>
-      <div class="stat"><span>500+</span><p>Pedidos diarios</p></div>
+      <div class="stat"><span>500+</span><p>Pizzas diarias</p></div>
       <div class="stat"><span>18</span><p>Recetas exclusivas</p></div>
       <div class="stat"><span>4.9⭐</span><p>Calificación promedio</p></div>
     </div>
@@ -198,8 +198,8 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-brand">🍔 BurgerHouse</div>
-    <p>© 2026 BurgerHouse. Todos los derechos reservados.</p>
+    <div class="footer-brand">🍕 PizzaHouse</div>
+    <p>© 2026 PizzaHouse. Todos los derechos reservados.</p>
     <div class="footer-links">
       <a href="#inicio">Inicio</a>
       <a href="#menu">Menú</a>
